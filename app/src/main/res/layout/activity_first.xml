@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".FirstActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"    >
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:background="@drawable/menu_image"
+            android:layout_marginLeft="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"    >
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/main"
+            android:layout_width="180dp"
+            android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_find"
+            android:background="@drawable/find"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"   />
+
+        <Button
+            android:id="@+id/btn_person"
+            android:background="@drawable/person"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"  />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        app:tabTextColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"    />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"   />
+
+</LinearLayout>
